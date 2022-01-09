@@ -15,8 +15,12 @@ npm start
 Then open your browser and go to http://localhost:8080/
 
 ## Sources
-- [Flickr API](https://www.flickr.com/services/api/)
-- [Flickr Photo Library with AngularJS](https://www.c-sharpcorner.com/blogs/flicker-photo-library-using-with-angularjs)
+- [Flickr API](https://www.flickr.com/services/api/): used to access the photo library
+- [Flickr Photo Library with AngularJS](https://www.c-sharpcorner.com/blogs/flicker-photo-library-using-with-angularjs): used as a guide
+
+### Libraries
+- [Bootstrap](https://getbootstrap.com/): Bootstrap is a front-end open source toolkit, used mainly for responsive design. I decided to include it in the project to help speed up layout design. 
+- [AngularJS](https://angularjs.org/): It is a framework used for creating dynamic web apps. As I was not very familiar with the framework, and since it is a standard in the company, I decided to further develop my skills. It was challenging, but I gave it my best. 
 
 ## Licence
 [GNU General Public Licence](https://choosealicense.com/licenses/agpl-3.0/)
