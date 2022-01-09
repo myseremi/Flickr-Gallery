@@ -1,0 +1,37 @@
+﻿
+<!-- Heading -->
+<header>
+    <div class="heading-container">
+        <div class="input-group">
+            <div class="form-outline">
+                <!-- Search bar -->
+                <form name="search">
+                    <input type="text" class="input-search" id="focus-input" placeholder="Search" required ng-model="homeController.searchValue" />
+                    <button class="search" value="Search" ng-click="homeController.searchImages()"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Logo -->
+    <img src="Assets/img/logo.png" alt="logo" class="logo">
+    <div class="logo-detail"></div>
+</header>
+
+<!-- Gallery -->
+<div class="thumbnails">
+    <ul class="thumbnails__list">
+        <li ng-repeat="item in homeController.urlData" ng-click="homeController.GetImage(item.id)"
+            style="cursor: pointer;">
+            <div class="photo">
+                <img src="{{item.url}}" id="{{item.id}}" class="preview" />
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Modal -->
+<div id="fullscreen" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="{{homeController.selectedId}}" src="{{homeController.selectedSrc}}">
+    <div id="caption">{{homeController.selectedCaption}}</div>
+</div>

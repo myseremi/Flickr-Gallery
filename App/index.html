@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flickr Gallery</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="Assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/css/gallery.css" rel="stylesheet" />
+    <link href="Assets/css/normalize.css" rel="stylesheet" />
+    <link href="Assets/css/thumbnails.css" rel="stylesheet" />
+    
+</head>
+
+<body ng-app="flickrApp">
+    <div class="container-fluid" infinite-scroll='loadMore()'>
+        <div ui-view></div>
+    </div>
+
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/bower_components/angular/angular.min.js"></script>
+    <script src="assets/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src='Assets/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js'></script>    
+    <script src="app.js"></script>
+    <script src="dataService/flickrDataService.js"></script>
+    <script src="home/homeController.js"></script>
+
+
+</body>
+
+</html>
